@@ -1,0 +1,276 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header {
+    display: flex;
+    background-color: #013369;
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    align-items: center;
+    border-bottom: thin red solid;
+}
+
+header p {
+    margin: 0 0 0 1rem;
+    padding: 0;
+    color: white;
+    font-size: larger;
+    font-style: italic;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+div {
+    display: flex;
+}
+
+#gameDiv {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#gameForm {
+    display: flex;
+    width: 95%;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+label, select, input {
+    width: 24%;
+    margin: 0.3rem 0;
+    font-size: 2vw;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    width: 24%;
+    margin: 0.3rem 12.5%;
+    font-size: 2vw;
+}
+
+#nfcTeams {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.outerHeading {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    background-color: #013369;
+    border: red thin solid;
+}
+
+.teamDivBackground {
+    width: 49.5%;
+    background-color: black;
+    justify-content: space-around;
+    margin: 0.2rem 0;
+}
+
+.teamDiv {
+    width: 95%;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.teamDiv h2 {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-style: italic;
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.teamDiv img {
+    width: 50%;
+}
+
+.statsDiv {
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.statsDiv p {
+    color: white;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#gameDisplay {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gameResults {
+    width: 49%;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0.5%;
+}
+
+.gameResults h2 {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-style: italic;
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.gameResults img {
+    width: 33%;
+}
+
+.dateP {
+    width: 100%;
+    text-align: center;
+    color: white;
+}    
+
+.scoreP {
+    color: white;
+    width: 33%;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#backgroundCardinals {
+    background-image: linear-gradient(90deg, #97233f, #000000);
+}
+
+#backgroundFalcons {
+    background-image: linear-gradient(90deg, #a71930, #000000, #a5acaf);
+}
+
+#backgroundPanthers {
+    background-image: linear-gradient(90deg, #0085ca, #000000, #bfc0bf);
+}
+
+#backgroundBears {
+    background-image: linear-gradient(90deg, #0b162a, #c83803);
+}
+
+#backgroundCowboys {
+    background-image: linear-gradient(90deg, #002244, #869397, #00338d);
+}
+
+#backgroundLions {
+    background-image: linear-gradient(90deg, #0076b6, #b0b7bc);
+}
+
+#backgroundPackers {
+    background-image: linear-gradient(90deg, #203731, #ffb612);
+}
+
+#backgroundRams {
+    background-image: linear-gradient(90deg, #002244, #b3995d);
+}
+
+#backgroundVikings {
+    background-image: linear-gradient(90deg, #4f2683, #ffc62f);
+}
+
+#backgroundSaints {
+    background-image: linear-gradient(90deg, #d3bc8d, #000000);
+}
+
+#backgroundGiants {
+    background-image: linear-gradient(90deg, #0b2265, #a71930, #a5acaf);
+}
+
+#backgroundEagles {
+    background-image: linear-gradient(90deg, #004c54, #a5acaf, #000000);
+}
+
+#background49ers {
+    background-image: linear-gradient(90deg, #aa0000, #b3995d);
+}
+
+#backgroundSeahawks {
+    background-image: linear-gradient(90deg, #002244, #69be28, #a5acaf);
+}
+
+#backgroundBuccaneers {
+    background-image: linear-gradient(90deg, #d50a0a, #34302b, #ff7900);
+}
+
+#backgroundCommanders {
+    background-image: linear-gradient(90deg, #773141, #ffb612);
+}
+
+@media screen and (max-width: 600px) {
+    label, input, select, button {
+        width: 49%;
+        font-size: 4vw;
+    }
+
+    .teamDivBackground {
+        width: 100%;
+    }
+
+    .statsDiv p {
+        font-size: 4vw;
+    }
+
+    .gameResults {
+        width: 95%;
+        margin: 2.5%;
+    }
+
+    #gameDisplay {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .teamDivBackground {
+        width: 24.5%;
+    }
+
+    .statsDiv p {
+        font-size: 1.5vw;
+    }
+
+    label, input, select, button {
+        font-size: 1.5vw;
+    }
+
+    .gameResults {
+        width: 32%;
+    }
+
+    .scoreP {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays and Events</title>
+    <meta name="author" content="William Bland">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nflLayout2.css">
+  </head>
+  <body>
+    <header>
+      <p>Assignment 9: NFL Layout Part 2 - Game Button</p>
+    </header>
+    <main>
+      <div id="gameDiv">
+        <h2 class="outerHeading">Games</h2>
+        <form id="gameForm">
+          <label for="homeTeam">Home Team: </label>
+          <select id="homeTeam" name="homeTeam">
+            <option value="" selected>--Select One--</option>
+            <option value="Cardinals">Cardinals</option>
+            <option value="Falcons">Falcons</option>
+            <option value="Panthers">Panthers</option>
+            <option value="Bears">Bears</option>
+            <option value="Cowboys">Cowboys</option>
+            <option value="Lions">Lions</option>
+            <option value="Packers">Packers</option>
+            <option value="Rams">Rams</option>
+            <option value="Vikings">Vikings</option>
+            <option value="Saints">Saints</option>
+            <option value="Giants">Giants</option>
+            <option value="Eagles">Eagles</option>
+            <option value="49ers">49ers</option>
+            <option value="Seahawks">Seahawks</option>
+            <option value="Buccaneers">Buccaneers</option>
+            <option value="Commanders">Commanders</option>
+          </select>
+          <label for="homePoints">Home Points: </label>
+          <input type="number" id="homePoints" name="homePoints" min="0">
+          <label for="awayTeam">Away Team: </label>
+          <select id="awayTeam" name="awayTeam">
+            <option value="" selected>--Select One--</option>
+            <option value="Cardinals">Cardinals</option>
+            <option value="Falcons">Falcons</option>
+            <option value="Panthers">Panthers</option>
+            <option value="Bears">Bears</option>
+            <option value="Cowboys">Cowboys</option>
+            <option value="Lions">Lions</option>
+            <option value="Packers">Packers</option>
+            <option value="Rams">Rams</option>
+            <option value="Vikings">Vikings</option>
+            <option value="Saints">Saints</option>
+            <option value="Giants">Giants</option>
+            <option value="Eagles">Eagles</option>
+            <option value="49ers">49ers</option>
+            <option value="Seahawks">Seahawks</option>
+            <option value="Buccaneers">Buccaneers</option>
+            <option value="Commanders">Commanders</option>
+          </select>
+          <label for="awayPoints">Away Points: </label>
+          <input type="number" id="awayPoints" name="awayPoints" min="0">
+          <label for="gameDate">Date: </label>
+          <input type="date" id="gameDate" name="gameDate">
+        <button type="reset" id="addGame">Add Game</button>
+        </form>
+        <div id="gameDisplay"></div>
+      </div>
+      <div id="nfcTeams">
+        <h2 class="outerHeading">NFC Teams</h2>
+      </div>
+    </main>
+    <script src="nflLayout2.js"></script>
+  </body>
+</html>
